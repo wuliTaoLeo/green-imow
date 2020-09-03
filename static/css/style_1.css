@@ -1,0 +1,82 @@
+/*
+Theme Name: Enfold Child
+Description: A <a href='http://codex.wordpress.org/Child_Themes'>Child Theme</a> for the Enfold Wordpress Theme. If you plan to do a lot of file modifications we recommend to use this Theme instead of the original Theme. Updating wil be much easier then.
+Version: 1.0
+Author: Kriesi
+Author URI: http://www.kriesi.at
+Template: enfold
+*/
+
+
+/* ------ automatische umbrüche - silbentrennung ------ */
+body, p, h1, h2, h3, h4, .av-special-heading-tag {
+        -ms-hyphens: manual !important;
+        -moz-hyphens: manual !important;
+        -webkit-hyphens: manual !important;
+        hyphens: manual !important;
+}
+
+
+/* enfold - menue im footer zeigen iphone */
+.responsive #socket .sub_menu_socket {
+	display: block !important;
+}
+
+
+/* enfold - automatische textumbrueche in iphone verhindern */
+/*body, p, h1, h2, h3, h4, .av-special-heading-tag {
+    -webkit-hyphens: none !important;
+    -moz-hyphens: none !important;
+    hyphens: none !important;
+}*/
+
+
+/* enfold - footer menu on mobile */
+@media only screen and (max-width: 767px) {
+    #socket .sub_menu_socket li {
+        padding: 0 10px 10px 0;
+    }
+    #socket ul {
+        margin-left: 0;
+    }
+    #socket .sub_menu_socket li {
+        border-left-style: none;
+    }
+    #socket .sub_menu_socket {
+        float: left;
+    }
+    #socket .sub_menu_socket div {
+        width: 100%;
+    }
+    .responsive #socket .sub_menu_socket {
+        margin-left: 0;
+    }
+}
+#socket .copyright {
+    margin-right: 25px;
+}
+
+/* enfold - display scroll to top on mobile */
+@media only screen and (max-width: 767px) {
+    .responsive #scroll-top-link {
+      display: block !important;
+    }
+}
+
+/* enfold - make mobile menu sicky */
+/*
+@media only screen and (orientation: portrait) {
+    #advanced_menu_toggle, #advanced_menu_hide {
+        position: fixed;
+        right: 3%;
+        top: 6%;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    #advanced_menu_toggle, #advanced_menu_hide {
+        position: fixed;
+        right: 2%;
+        top: 11%;
+    }
+} */
