@@ -64,7 +64,7 @@ html.responsive { min-width: 0px; }
 /* Nested Column Classes */
 body .unit.alpha, body .units.alpha, body div .first {
   margin-left: 0;
-  clear: left;
+  /* clear: left; */
 }
 body .unit.alpha, body .units.alpha {
   width: 100%;
@@ -242,7 +242,7 @@ div .av_two_fifth {
   width: 36.4%;
 }
 div .av_one_half {
-  margin-left: 6%;
+  /* margin-left: 6%; */
   width: 47%;
 }
 div .av_three_fifth {
